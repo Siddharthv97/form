@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Forms</title>
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="reg_form">
+            <h2>Registration form</h2>
+            <form>
+                <div class="full_name">
+                    <div class="first_name">
+                        <input type="text" name="fname" id="fName">
+                        <label for="fName">First Name</label>
+                    </div>
+                    <div class="last_name">
+                        <input type="text" name="lname" id="lName">
+                        <label for="lName">Last Name</label>
+                    </div>
+                </div>
+                <div class="age_container">
+                    <label for="age">Age :</label>
+                    <input type="number" name="age" id="age">
+                </div>
+                <div class="email_container">
+                    <input type="email" name="email" id="email">
+                    <label for="email">Email id</label>
+                </div>
+                <div class="gender">
+                    <p>Gender :</p>
+                    <div class="male_gender">
+                        <input type="radio" name="gender" id="male" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="female_gender">
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="mob_number">
+                    <label for="mobile">Mobile No :</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="+91 123-45-678"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </div>
+                <button type="submit" id="submitBtn">Get Started</button>
+
+            </form>
+        </section>
+    </main>
+    <section class="database">
+        <h1>User DataBase</h1>
+
+        <div class="table_wrapper">
+            <div class="user_data">
+                <table>
+                    <tr>
+                        <th>S.no</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Email ID </th>
+                        <th>Gender</th>
+                        <th>Mobile Number</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Siddharth</td>
+                        <td>Vishwakarma</td>
+                        <td>27</td>
+                        <td>IamUnknown@gmail.com</td>
+                        <td>Male</td>
+                        <td>8109469797</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Siddharth</td>
+                        <td>Vishwakarma</td>
+                        <td>27</td>
+                        <td>IamUnknown@gmail.com</td>
+                        <td>Male</td>
+                        <td>8109469797</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
